@@ -1,0 +1,16 @@
+﻿
+@* RenderFragmentを使用したコンポーネント例 *@
+
+<h3>RenderFragmentComponent</h3>
+
+@ChildContent
+
+@code {
+
+    /// <summary>
+    /// 実装先で指定するページの固有部分
+    /// </summary>
+    [Parameter]
+    public RenderFragment ChildContent{ get; set; }
+
+}
