@@ -1,0 +1,19 @@
+﻿
+@* URLからパラメータを受け取るページ *@
+
+@page "/parameterurl/{Param1}/{Param2}"
+
+<h3>ParameterUrl</h3>
+
+<div>Param1 : @Param1</div>
+<div>Param2 : @Param2</div>
+
+@code {
+
+    [Parameter]
+    public string Param1 { get; set; }
+
+    [Parameter]
+    public string Param2 { get; set; }
+
+}

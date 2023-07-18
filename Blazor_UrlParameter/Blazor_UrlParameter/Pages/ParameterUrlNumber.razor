@@ -1,0 +1,28 @@
+﻿
+@* URLから数値を受け取るページ *@
+
+@page "/parameterurlnumber/{Param1}/{Param2}"
+
+<h3>ParameterUrl</h3>
+
+<div>Param1をキャストした値 : @paramNumber1</div>
+<div>Param2をキャストした値 : @paramNumber2</div>
+
+@code {
+
+    [Parameter]
+    public string Param1 { get; set; }
+
+    [Parameter]
+    public string Param2 { get; set; }
+
+    private int paramNumber1;
+
+    private int paramNumber2;
+
+    protected override void OnInitialized()
+    {
+        int.TryParse(Param1, out paramNumber1);
+        int.TryParse(Param2, out paramNumber2);
+    }
+}
