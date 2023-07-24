@@ -1,0 +1,16 @@
+﻿@* 属性スプラッティングを使用したコンポーネント *@
+
+<input placeholder="@PlaceHolder" @attributes=InputAttributes />
+
+@code {
+
+    [Parameter]
+    public string? PlaceHolder{ get; set; }
+
+    /// <summary>
+    /// 属性スプラッティングで受け取るパラメータ
+    /// </summary>
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object>? InputAttributes { get; set; }
+
+}

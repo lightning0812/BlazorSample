@@ -1,0 +1,29 @@
+﻿@* ボタンに属性スプラッティングを使用する例 *@
+
+@page "/attributebutton"
+
+<button @attributes="buttonAttributes">属性スプラッティング</button>
+
+@code {
+
+    private IDictionary<string, object> buttonAttributes;
+
+    protected override void OnInitialized()
+    {
+        // 属性スプラッティングを使用してボタンのスタイルを設定
+        buttonAttributes = new Dictionary<string, object>
+        {
+            { "class", "btn btn-primary" },
+            { "style", "font-size: 16px; font-weight: bold;" },
+            { "onclick", EventCallback.Factory.Create(this, OnButtonClick) }
+        };
+    }
+
+    private void OnButtonClick()
+    {
+        // ボタンがクリックされたときの処理
+        // ここに適当な処理を記述
+        Console.WriteLine("ボタンがクリックされた！");
+    }
+
+}

@@ -1,0 +1,15 @@
+﻿@* 属性スプラッティングのコンポーネントを使用したページ *@
+
+@page "/attributecomponent"
+
+<Blazor_AttributeSplatting.Components.AttributeSplattingComponent InputAttributes="Attributes" 
+                                                                          PlaceHolder="何か入力してください。" />
+
+@code {
+
+    private Dictionary<string, object> Attributes { get; set; } = new()
+    {
+        { "type","password" }
+    };
+
+}
