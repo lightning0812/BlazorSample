@@ -1,0 +1,17 @@
+﻿@page "/eventcallback-parent"
+@using Blazor_EventComponent.Components
+
+<h1>EventCallbackサンプル</h1>
+
+<EventCallbackComponent OnClickCallback="@ShowMessage" />
+
+<p>@message</p>
+
+@code {
+    private string message;
+
+    private void ShowMessage(MouseEventArgs e)
+    {
+        message = "ボタン１が押されました！";
+    }
+}
