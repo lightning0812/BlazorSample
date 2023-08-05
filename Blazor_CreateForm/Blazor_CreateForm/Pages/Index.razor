@@ -1,0 +1,51 @@
+﻿@page "/"
+
+@using System.ComponentModel.DataAnnotations;
+
+<EditForm Model="formData" OnValidSubmit="ValidSubmit">
+
+    @* アノテーションによる検証で必要 *@
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="name">名前</label>
+        <InputText id="name" class="form-control" @bind-Value="formData.Name" />
+    </div>
+    @* 検証でエラーが発生した際のメッセージ *@
+    <ValidationMessage For="@(() => formData.Name)" />
+
+    <div class="form-group">
+        <label for="email">電子メール</label>
+        <InputText id="email" class="form-control" @bind-Value="formData.Email" />
+    </div>
+    @* 検証でエラーが発生した際のメッセージ *@
+    <ValidationMessage For="@(() => formData.Email)" />
+
+    <button type="submit" class="btn btn-primary">送信</button>
+
+    <p>@sendMessage</p>
+
+</EditForm>
+
+@code {
+
+    private FormData formData = new FormData();
+
+    private string? sendMessage;
+
+    private void ValidSubmit()
+    {
+        sendMessage = "フォームが送信されました。";
+    }
+
+    private class FormData
+    {
+        [Required(ErrorMessage = "名前を入力してください。")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "電子メールを入力してください。")]
+        [EmailAddress(ErrorMessage = "有効な電子メールアドレスを入力してください。")]
+        public string Email { get; set; }
+    }
+
+}

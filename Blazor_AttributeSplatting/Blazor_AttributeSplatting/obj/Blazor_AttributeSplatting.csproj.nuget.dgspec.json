@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj": {}
+    "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj": {
+    "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj",
+        "projectUniqueName": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj",
         "projectName": "Blazor_AttributeSplatting",
-        "projectPath": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj",
+        "projectPath": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting.csproj",
         "packagesPath": "C:\\Users\\okaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\",
+        "outputPath": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
