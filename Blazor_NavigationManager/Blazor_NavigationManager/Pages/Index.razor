@@ -1,0 +1,20 @@
+﻿@page "/"
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Index</PageTitle>
+
+@* カウンターページに遷移するボタン *@
+<button @onclick="NavigateToCounterPage">カウンターページへ移動</button>
+
+@code{
+
+    /// <summary>
+    /// カウンターページへ遷移
+    /// </summary>
+    private void NavigateToCounterPage()
+    {
+        NavigationManager.NavigateTo("counter");
+    }
+
+}

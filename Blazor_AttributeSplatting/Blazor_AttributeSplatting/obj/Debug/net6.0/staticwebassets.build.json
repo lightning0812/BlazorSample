@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tG/G9c+r/pZ/++nwSNnjZO8XKxsyr0KmjTtzIZIR88k=",
+  "Hash": "67J8l7mthPcrbbfizsHzn8wNAxPY+bIF70wDLgFshLI=",
   "Source": "Blazor_AttributeSplatting",
   "BasePath": "_content/Blazor_AttributeSplatting",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Blazor_AttributeSplatting\\wwwroot",
       "Source": "Blazor_AttributeSplatting",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_AttributeSplatting.styles.css",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_AttributeSplatting.styles.css",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "Blazor_AttributeSplatting.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_AttributeSplatting.styles.css"
+      "OriginalItemSpec": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Blazor_AttributeSplatting.styles.css"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_AttributeSplatting.bundle.scp.css",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_AttributeSplatting.bundle.scp.css",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "Blazor_AttributeSplatting.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_AttributeSplatting.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Blazor_AttributeSplatting.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\css\\site.css",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\favicon.ico",
       "SourceId": "Blazor_AttributeSplatting",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\デスクトップ\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\okaza\\OneDrive\\ドキュメント\\GitHub\\BlazorSample\\Blazor_AttributeSplatting\\Blazor_AttributeSplatting\\wwwroot\\",
       "BasePath": "_content/Blazor_AttributeSplatting",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
