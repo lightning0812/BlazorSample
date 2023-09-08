@@ -1,0 +1,119 @@
+﻿@page "/"
+
+@using Blazor_DynamicComponent.Components;
+@using Blazor_DynamicComponent.Model;
+
+<p>
+    <label>
+        果物を選択してください。
+    </label>
+    <select @onchange="OnDropdownChange">
+        <option value="">未選択</option>
+        <option value="@nameof(Apple)">リンゴ</option>
+        <option value="@nameof(Orange)">オレンジ</option>
+        <option value="@nameof(Banana)">バナナ</option>
+    </select>
+</p>
+
+@if (selectedType is not null)
+{
+    <DynamicComponent Type="@selectedType" />
+
+}
+
+@code{
+
+    /// <summary>
+    /// 選択されている動的コンポーネントのタイプ
+    /// </summary>
+    private Type? selectedType;
+
+    /// <summary>
+    /// ドロップダウン変更イベント
+    /// </summary>
+    /// <param name="e"></param>
+    private void OnDropdownChange(ChangeEventArgs e)
+    {
+        selectedType = e.Value?.ToString()?.Length > 0 ?
+            Type.GetType($"Blazor_DynamicComponent.Components.{e.Value}") : null;
+    }
+
+}
+
+@*<p>
+    <label>
+        果物を選択してください。
+    </label>
+    <select @onchange="OnDropdownChange">
+        <option value="">未選択</option>
+        @foreach (var c in components)
+        {
+            <option value="@c.Key">@c.Value.Name</option>
+        }
+    </select>
+</p>
+
+@if (selectedType is not null)
+{
+    <DynamicComponent Type="@selectedType" Parameters="@components[selectedType.Name].Parameters" />
+}
+
+@code {
+
+    /// <summary>
+    /// 選択されているコンポーネントのタイプ
+    /// </summary>
+    private Type? selectedType;
+
+    /// <summary>
+    /// コンポーネント名をキーとして、
+    /// ドロップダウンの選択肢名とコンポーネントに渡すパラメータを検索する辞書
+    /// </summary>
+    private Dictionary<string, ComponentMetadata> components = new()
+    {
+        {
+            nameof(Apple),
+            new ComponentMetadata
+            {
+                Name = "リンゴ",
+                Parameters = new() { { "Impressions", "リンゴは美味しい" } }
+            }
+        },
+        {
+            nameof(Orange),
+            new ComponentMetadata
+            {
+                Name = "ミカン",
+                Parameters = new() { { "Impressions", "ミカンは美味しい" } }
+            }
+        },
+        {
+            nameof(Banana),
+            new ComponentMetadata
+            {
+                Name = "バナナ",
+                Parameters = new() { { "Impressions", "バナナは美味しい" } }
+            }
+        }
+    };
+
+    /// <summary>
+    /// ドロップダウン変更イベント
+    /// </summary>
+    /// <param name="e"></param>
+    private void OnDropdownChange(ChangeEventArgs e)
+    {
+        selectedType = e.Value?.ToString()?.Length > 0 ?
+            Type.GetType($"Blazor_DynamicComponent.Components.{e.Value}") : null;
+    }
+
+}*@
+
+
+
+
+
+
+
+
+
