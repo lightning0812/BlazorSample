@@ -1,0 +1,15 @@
+﻿@page "/parent"
+@using Blazor_Ref.Components;
+
+<ChildComponent @ref="childRef" />
+
+<button @onclick="UpdateChildMessage">子コンポーネントのメッセージを更新</button>
+
+@code {
+    private ChildComponent? childRef;
+
+    private void UpdateChildMessage()
+    {
+        childRef?.UpdateMessage("新しいメッセージ");
+    }
+}

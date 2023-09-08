@@ -1,0 +1,13 @@
+﻿<h3>@Message</h3>
+
+@code {
+    public string Message { get; set; } = "初期メッセージ";
+
+    public void UpdateMessage(string newMessage)
+    {
+        Message = newMessage;
+
+        // 状態変更後、コンポーネントの再レンダリングをトリガーします
+        StateHasChanged();
+    }
+}
