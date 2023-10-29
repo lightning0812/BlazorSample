@@ -1,0 +1,64 @@
+﻿@page "/"
+@using Blazor_VirtualizeComponent.Data;
+
+@* 仮想化コンポーネント *@
+<Virtualize Context="product" ItemsProvider="LoadProducts">
+    <ItemContent>
+        <div>@product.Name - $@product.Price</div>
+    </ItemContent>
+    <Placeholder>
+        <div>読み込み中...</div>
+    </Placeholder>
+</Virtualize>
+
+@code {
+
+    /// <summary>
+    /// 製品情報読み込み
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
+    private async ValueTask<ItemsProviderResult<Product>> LoadProducts(ItemsProviderRequest request)
+    {
+        var startIndex = request.StartIndex;
+        var count = request.Count;
+        var items = new List<Product>();
+
+        // 要求されたデータ範囲に基づいて製品リストを生成
+        for (int i = startIndex; i < startIndex + count && i < 1000; i++)
+        {
+            items.Add(new Product { Name = $"ProductName{i}", Price = 10 * i });
+        }
+
+        await Task.Delay(500);
+
+        // 第二引数に、実際の全製品数を指定することで、スクロールの終端を正しく制御する(1000は仮)
+        return new ItemsProviderResult<Product>(items, 1000);
+    }
+
+}
+
+@* 非同期対応前 *@
+@* @page "/"
+@using Blazor_VirtualizeComponent.Data;
+
+<Virtualize Context="product" Items="@products">
+    <div>@product.Name - $@product.Price</div>
+</Virtualize>
+
+@code {
+
+    private List<Product> products;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        products = new();
+        for (int i = 0; i < 1000; i++)
+        {
+            products.Add(new() { Name = $"ProductName{i}", Price = 10 * i });
+        }
+    }
+
+} *@
