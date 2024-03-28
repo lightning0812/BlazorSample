@@ -1,0 +1,10 @@
+﻿.drag-and-drop-item {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #a57f39;
+    border-radius: 10px;
+    padding: 0.1rem 0.25rem;
+    background-color: #ffeac4;
+    font-size: 0.875rem;
+    margin-right: 0.25rem;
+}

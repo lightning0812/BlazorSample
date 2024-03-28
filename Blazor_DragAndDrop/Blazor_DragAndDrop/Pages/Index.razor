@@ -1,0 +1,80 @@
+﻿@page "/"
+@using System.Diagnostics
+
+@foreach (var item in _items)
+{
+    <div class="drag-and-drop-item"
+         draggable="true"
+         ondragover="event.preventDefault();"
+         @ondragstart="() => DragStart(_items.IndexOf(item))"
+         @ondrop="() => Drop(_items.IndexOf(item))">
+
+        <span class="w-100">
+            @item
+        </span>
+    </div>
+}
+
+@code {
+    /// <summary>
+    /// 項目リスト
+    /// </summary>
+    private List<string> _items = default!;
+
+    /// <summary>
+    /// ドラッグ中の項目のインデックス
+    /// </summary>
+    private int _draggingItemIndex;
+
+    /// <summary>
+    /// 初期化
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        _items = new List<string>()
+        {
+            "apple",
+            "orange",
+            "banana"
+        };
+    }
+
+    /// <summary>
+    /// ドラッグ開始
+    /// </summary>
+    /// <param name="dragIndex">ドラッグするインデックス</param>
+    private void DragStart(int dragIndex)
+    {
+        Debug.WriteLine("DragStart");
+        _draggingItemIndex = dragIndex;
+    }
+
+    /// <summary>
+    /// ドロップ
+    /// </summary>
+    /// <param name="dropIndex">drop先のインデックス</param>
+    private void Drop(int dropIndex)
+    {
+        Debug.WriteLine("Drop");
+
+        // ドラッグ中の項目とドロップ先の項目のインデックスが異なる場合は、交換する
+        if (_draggingItemIndex != dropIndex)
+        {
+            SwapElements(_items, _draggingItemIndex, dropIndex);
+        }
+    }
+
+    /// <summary>
+    /// リストの要素を交換
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="list"></param>
+    /// <param name="index1"></param>
+    /// <param name="index2"></param>
+    private void SwapElements<T>(List<T> list, int index1, int index2)
+    {
+        T temp = list[index1];
+        list[index1] = list[index2];
+        list[index2] = temp;
+    }
+}
