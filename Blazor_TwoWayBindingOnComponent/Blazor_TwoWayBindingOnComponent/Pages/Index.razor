@@ -1,0 +1,8 @@
+﻿@page "/"
+@using Blazor_TwoWayBindingOnComponent.Components
+
+<TwoWayBindingComponent @bind-TwoWayBindValue="testValue" />
+
+@code{
+    private string? testValue;
+}

@@ -1,0 +1,25 @@
+﻿<div>
+    <input type="text" @bind="@TwoWayBindValue" />
+</div>
+
+@code {
+    [Parameter]
+    public string TwoWayBindValue
+    {
+        get => _value;
+        set
+        {
+            if (_value == value)
+            {
+                return;
+            }
+            _value = value;
+            TwoWayBindValueChanged.InvokeAsync(value);
+        }
+    }
+
+    [Parameter]
+    public EventCallback<string> TwoWayBindValueChanged { get; set; }
+
+    private string _value;
+}
