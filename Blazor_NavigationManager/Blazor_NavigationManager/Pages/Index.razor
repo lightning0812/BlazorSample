@@ -1,20 +1,39 @@
 ﻿@page "/"
-
+@using Microsoft.AspNetCore.Components
+@using System.Diagnostics
 @inject NavigationManager NavigationManager
+@implements IDisposable
 
-<PageTitle>Index</PageTitle>
+<button @onclick="NavigateToCounter">カウンターページへ移動</button>
 
-@* カウンターページに遷移するボタン *@
-<button @onclick="NavigateToCounterPage">カウンターページへ移動</button>
+@code {
+    protected override void OnInitialized()
+    {
+        // ページ遷移したときのイベントを登録
+        NavigationManager.LocationChanged += LocationChangedHandler;
+    }
 
-@code{
+    /// <summary>
+    /// ページ遷移したときの処理
+    /// </summary>
+    private void LocationChangedHandler(object? sender, LocationChangedEventArgs e)
+    {
+        Debug.WriteLine($"遷移先URL: {e.Location}");
+    }
 
     /// <summary>
     /// カウンターページへ遷移
     /// </summary>
-    private void NavigateToCounterPage()
+    private void NavigateToCounter()
     {
-        NavigationManager.NavigateTo("counter");
+        NavigationManager.NavigateTo("/counter");
     }
 
+    /// <summary>
+    /// ページ遷移後の破棄処理
+    /// </summary>
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= LocationChangedHandler;
+    }
 }
