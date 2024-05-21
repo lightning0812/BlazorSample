@@ -1,0 +1,71 @@
+﻿@page "/"
+
+@* ドロップダウン *@
+<select @bind="SelectedFruit">
+    @foreach (var fruit in fruits)
+    {
+        <option value=@fruit>@fruit</option>
+    }
+</select>
+<p>選択されたフルーツ：@SelectedFruit</p>
+
+@* テキストボックス *@
+<input type="text" @bind="TextBoxText" />
+<p>入力されたテキスト：@TextBoxText</p>
+
+@* チェックボックス *@
+<input type="checkbox" @bind="IsChecked" />
+<p>チェックボックスの状態：@(IsChecked ? "チェックされています" : "チェックされていません")</p>
+
+@* ラジオボタン *@
+<div>
+    <input type="radio" id="option1" name="options" value="Option1" @onchange="e => SelectedOption = e.Value?.ToString()" checked="@((SelectedOption == "Option1"))" />
+    <label for="option1">オプション1</label>
+</div>
+<div>
+    <input type="radio" id="option2" name="options" value="Option2" @onchange="e => SelectedOption = e.Value?.ToString()" checked="@((SelectedOption == "Option2"))" />
+    <label for="option2">オプション2</label>
+</div>
+<p>選択されたオプション：@SelectedOption</p>
+
+@* スライダー *@
+<input type="range" min="0" max="100" @bind="SliderValue" />
+<p>スライダーの値：@SliderValue</p>
+
+@code {
+    /// <summary>
+    /// 選択されているフルーツ
+    /// </summary>
+    private string SelectedFruit { get; set; } = "Apple";
+
+    /// <summary>
+    /// フルーツ項目
+    /// </summary>
+    private List<string> fruits = new List<string>
+    {
+        "Apple",
+        "Banana",
+        "Orange"
+    };
+
+    /// <summary>
+    /// テキストボックスのテキスト
+    /// </summary>
+    private string? TextBoxText { get; set; }
+
+    /// <summary>
+    /// チェックボックスのチェック有無
+    /// </summary>
+    private bool IsChecked { get; set; }
+
+    /// <summary>
+    /// ラジオボタンで選択されたオプション
+    /// </summary>
+    private string? SelectedOption { get; set; } = "Option1";
+
+    /// <summary>
+    /// スライダーの値
+    /// </summary>
+    private int SliderValue { get; set; }
+}
+
