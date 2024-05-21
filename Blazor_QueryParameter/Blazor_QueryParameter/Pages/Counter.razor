@@ -15,7 +15,9 @@
 
     int countValue = 0;
 
-    // ページ初期化時の処理
+    /// <summary>
+    /// ページ初期化時の処理
+    /// </summary>
     protected override void OnInitialized()
     {
         var currentUri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
@@ -27,7 +29,9 @@
         }
     }
 
-    // カウントを増やす処理
+    /// <summary>
+    /// カウントを増やす処理
+    /// </summary>
     void IncrementCount()
     {
         countValue++;
