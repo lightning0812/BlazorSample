@@ -16,10 +16,11 @@
 
     protected override void OnAfterRender(bool firstRender)
     {
-        if (firstRender)
-        {
-            childRef?.UpdateMessage("レンダリング後の更新メッセージ");
-        }
+        // if (firstRender)
+        // {
+        //     // OnAfterRenderはレンダリング後の処理なので childRef は null ではありません
+        //     childRef?.UpdateMessage("レンダリング後の更新メッセージ");
+        // }
     }
 
     private void UpdateChildMessage()
