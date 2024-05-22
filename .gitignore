@@ -482,3 +482,5 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/Blazor_QueryParameter/Blazor_QueryParameter/obj/Debug/net6.0/Blazor_QueryParameter.AssemblyInfo.cs
+/Blazor_QueryParameter/Blazor_QueryParameter/obj/Debug/net6.0/Blazor_QueryParameter.AssemblyInfoInputs.cache
