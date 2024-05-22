@@ -8,8 +8,22 @@
 @code {
     private ChildComponent? childRef;
 
+    protected override void OnInitialized()
+    {
+        // 初期化時 childRef は null になっている
+        //childRef?.UpdateMessage("新しいメッセージ");
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            childRef?.UpdateMessage("レンダリング後の更新メッセージ");
+        }
+    }
+
     private void UpdateChildMessage()
     {
-        childRef?.UpdateMessage("新しいメッセージ");
+        childRef?.UpdateMessage("ボタンによるメッセージ更新");
     }
 }
