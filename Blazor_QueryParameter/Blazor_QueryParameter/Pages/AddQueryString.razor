@@ -3,15 +3,14 @@
 @inject NavigationManager NavigationManager
 
 @* ページタイトル *@
-
 <h1>Add Query String Example</h1>
-@* 新しいURIを表示 *@
 
+@* 新しいURIを表示 *@
 <p>Original URI: @originalUri</p>
-<p>Modified URI: @modifiedUri</p>
+<p>Modified URI: @uriWithQuery </p>
 @code {
-    string originalUri = "https://example.com/path";
-    string? modifiedUri;
+    string originalUri = "https://example.com";
+    string? uriWithQuery;
 
     /// <summary>
     /// ページ初期化時の処理
@@ -19,7 +18,13 @@
     protected override void OnInitialized()
     {
         // クエリパラメータを追加
-        modifiedUri = QueryHelpers.AddQueryString(originalUri, "newParam", "newValue");
-    }
+        var parameters = new Dictionary<string, string?>
+        {
+            { "name", "John Doe" },
+            { "age", "30" },
+            { "city", "Tokyo" }
+        };
 
+        uriWithQuery = QueryHelpers.AddQueryString(originalUri, parameters);
+    }
 }
