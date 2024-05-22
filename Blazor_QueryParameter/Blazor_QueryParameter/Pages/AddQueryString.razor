@@ -1,0 +1,25 @@
+﻿@page "/add-query"
+@using Microsoft.AspNetCore.WebUtilities;
+@inject NavigationManager NavigationManager
+
+@* ページタイトル *@
+
+<h1>Add Query String Example</h1>
+@* 新しいURIを表示 *@
+
+<p>Original URI: @originalUri</p>
+<p>Modified URI: @modifiedUri</p>
+@code {
+    string originalUri = "https://example.com/path";
+    string? modifiedUri;
+
+    /// <summary>
+    /// ページ初期化時の処理
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        // クエリパラメータを追加
+        modifiedUri = QueryHelpers.AddQueryString(originalUri, "newParam", "newValue");
+    }
+
+}
