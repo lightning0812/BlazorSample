@@ -8,32 +8,32 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\okaza\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\tsuboi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\okaza\\Source\\Repos\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\Blazor_QueryParameter.csproj",
+      "projectUniqueName": "C:\\Users\\tsuboi\\Documents\\GitHub\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\Blazor_QueryParameter.csproj",
       "projectName": "Blazor_QueryParameter",
-      "projectPath": "C:\\Users\\okaza\\Source\\Repos\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\Blazor_QueryParameter.csproj",
-      "packagesPath": "C:\\Users\\okaza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\okaza\\Source\\Repos\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\obj\\",
+      "projectPath": "C:\\Users\\tsuboi\\Documents\\GitHub\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\Blazor_QueryParameter.csproj",
+      "packagesPath": "C:\\Users\\tsuboi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tsuboi\\Documents\\GitHub\\BlazorSample\\Blazor_QueryParameter\\Blazor_QueryParameter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\okaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\tsuboi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -46,6 +46,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -70,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
