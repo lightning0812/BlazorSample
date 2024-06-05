@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor_Timer", "Blazor_Timer\Blazor_Timer.csproj", "{B4EA0F7D-875E-4AD9-8096-CCD1E2CBB2B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4EA0F7D-875E-4AD9-8096-CCD1E2CBB2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EA0F7D-875E-4AD9-8096-CCD1E2CBB2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EA0F7D-875E-4AD9-8096-CCD1E2CBB2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EA0F7D-875E-4AD9-8096-CCD1E2CBB2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A25A813-5F97-4A55-8410-35094FCCD539}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,70 @@
+﻿@page "/use-timer"
+@using System.Timers
+
+<div class="color-box" style="background-color: @currentColor;">
+    This box changes color every 1 seconds.
+</div>
+
+@code {
+    /// <summary>
+    /// 現在の背景色
+    /// </summary>
+    private string currentColor = "red";
+
+    /// <summary>
+    /// 色の配列
+    /// </summary>
+    private readonly string[] colors = { "red", "green", "blue", "yellow", "purple", "orange" };
+
+    /// <summary>
+    /// 現在の色のインデックス
+    /// </summary>
+    private int colorIndex = 0;
+
+    /// <summary>
+    /// タイマー
+    /// </summary>
+    private System.Timers.Timer? colorChangeTimer;
+
+    /// <summary>
+    /// 初期化
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        InitializeTimer();
+    }
+
+    /// <summary>
+    /// タイマー初期化
+    /// </summary>
+    private void InitializeTimer()
+    {
+        colorChangeTimer = new System.Timers.Timer(1000);
+        colorChangeTimer.Elapsed += async (object? sender, ElapsedEventArgs e) =>
+        {
+            await OnColorChangeAsync(sender, e);
+        };
+        colorChangeTimer.Start();
+    }
+
+    /// <summary>
+    /// 色を変化させる
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async Task OnColorChangeAsync(object? sender, ElapsedEventArgs e)
+    {
+        colorIndex = (colorIndex + 1) % colors.Length;
+        currentColor = colors[colorIndex];
+        await InvokeAsync(StateHasChanged);
+    }
+
+    /// <summary>
+    /// 破棄
+    /// </summary>
+    public void Dispose()
+    {
+        colorChangeTimer?.Dispose();
+    }
+}
