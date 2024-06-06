@@ -1,0 +1,46 @@
+﻿@page "/javascript-call-dotnet"
+@inject IJSRuntime JSRuntime
+
+<h3>JavaScriptから.NET呼び出し</h3>
+
+<button class="btn btn-primary" @onclick="CallJavaScript">JavaScript呼び出しボタン</button>
+
+<p>@message</p>
+
+@code {
+    /// <summary>
+    /// 画面に表示するメッセージ
+    /// </summary>
+    private static string? message;
+
+    /// <summary>
+    /// メッセージを取得（JavaScriptから呼び出し可能なメソッド）
+    /// </summary>
+    /// <remarks>staticメソッドである必要あり</remarks>
+    [JSInvokable("GetMessage")]
+    public static Task<string> GetMessage()
+    {
+        return Task.FromResult(".NET -> JavaScript へのメッセージ");
+    }
+
+    /// <summary>
+    /// メッセージを更新（JavaScriptから呼び出し可能なメソッド）
+    /// </summary>
+    /// <remarks>staticメソッドである必要あり</remarks>
+    /// <param name="newMessage">更新するメッセージ</param>
+    [JSInvokable("UpdateMessage")]
+    public static Task UpdateMessage(string newMessage)
+    {
+        message = newMessage;
+        return Task.CompletedTask;
+    }
+
+    /// <summary>
+    /// JavaScriptのメソッド呼び出し
+    /// </summary>
+    private async Task CallJavaScript()
+    {
+        // JavaScriptの"callDotNetMethod"メソッドを呼び出し
+        await JSRuntime.InvokeVoidAsync("callDotNetMethod");
+    }
+}
