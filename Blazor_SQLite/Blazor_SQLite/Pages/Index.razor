@@ -1,0 +1,12 @@
+﻿@page "/"
+@using Blazor_SQLite.Data
+@inject TestDbContext TestDbContext
+
+@foreach (var weapon in TestDbContext.Weapons)
+{
+    <ul>
+        <li>名前  ：@weapon.Name</li>
+        <li>説明  ：@weapon.Description</li>
+        <li>攻撃力：@weapon.AttackPower</li>
+    </ul>
+}
