@@ -1,0 +1,9 @@
+﻿@page "/settings"
+@using Blazor_GetAppSettingsJson.Entities
+@using Microsoft.Extensions.Options
+@inject IOptions<Setting> Options
+
+<h3>appsettings.jsonの設定値取得</h3>
+<p>Setting1: @Options.Value.Setting1</p>
+<p>Setting2: @Options.Value.Setting2</p>
+<p>Setting3: @Options.Value.Setting3</p>
