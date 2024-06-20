@@ -1,0 +1,54 @@
+﻿@page "/upload"
+@using Microsoft.AspNetCore.Components.Forms
+@inject IWebHostEnvironment WebHostEnvironment
+
+<h3>アップロード検証</h3>
+<hr />
+<p>[wwwroot/upload]をアップロード</p>
+<InputFile OnChange="ChangeFileAsync" />
+
+@if (!string.IsNullOrEmpty(Message))
+{
+    <p>@Message</p>
+}
+
+@code {
+
+    /// <summary>
+    /// メッセージ
+    /// </summary>
+    private string Message = string.Empty;
+
+    /// <summary>
+    /// ファイルサイズの上限値（今回は 10MB に設定）
+    /// </summary>
+    private long maxFileSize = 10485760;
+
+    /// <summary>
+    /// ファイル変更時の処理
+    /// </summary>
+    /// <param name="e">イベント引数</param>
+    private async Task ChangeFileAsync(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file.Size > maxFileSize)
+        {
+            Message = $"ファイルサイズが大きすぎます。最大 {maxFileSize / (1024 * 1024)} MB までアップロード可能です。";
+            return;
+        }
+
+        var uploadPath = Path.Combine(WebHostEnvironment.WebRootPath, "upload");
+        Directory.CreateDirectory(uploadPath);
+
+        var filePath = Path.Combine(uploadPath, file.Name);
+
+        // ファイルサイズ制限（maxFileSize）を設定
+        using var fileStream = file.OpenReadStream(maxFileSize); 
+        using var memoryStream = new MemoryStream();
+        await fileStream.CopyToAsync(memoryStream);
+        await File.WriteAllBytesAsync(filePath, memoryStream.ToArray());
+
+        Message = $"{file.Name}がアップロードされました。";
+    }
+
+}
