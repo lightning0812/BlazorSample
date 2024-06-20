@@ -10,15 +10,14 @@
 @code {
     private async Task DownloadFileAsync()
     {
-        // ファイルのバイナリデータを取得
         var filePath = Path.Combine(WebHostEnvironment.WebRootPath, "download", "Test.Pdf");
         var fileBytes = await File.ReadAllBytesAsync(filePath);
-        var fileName = "Test.Pdf";
+        var fileName = "Test.pdf";
         var contentType = "application/pdf";
 
-        // JavaScriptの関数（downloadFromByteArray）を呼び出して、ダウンロードを開始する
+        // JavaScriptの関数（downloadFile）を呼び出して、ダウンロードを開始する
         await JSRuntime.InvokeVoidAsync(
-            "downloadFromByteArray",
+            "downloadFile",
             new
             {
                 byteArray = fileBytes,

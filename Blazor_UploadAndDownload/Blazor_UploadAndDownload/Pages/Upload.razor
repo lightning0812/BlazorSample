@@ -13,7 +13,6 @@
 }
 
 @code {
-
     /// <summary>
     /// メッセージ
     /// </summary>
@@ -30,7 +29,7 @@
     /// <param name="e">イベント引数</param>
     private async Task ChangeFileAsync(InputFileChangeEventArgs e)
     {
-        var file = e.File;
+        IBrowserFile file = e.File;
         if (file.Size > maxFileSize)
         {
             Message = $"ファイルサイズが大きすぎます。最大 {maxFileSize / (1024 * 1024)} MB までアップロード可能です。";
@@ -43,12 +42,11 @@
         var filePath = Path.Combine(uploadPath, file.Name);
 
         // ファイルサイズ制限（maxFileSize）を設定
-        using var fileStream = file.OpenReadStream(maxFileSize); 
+        using var fileStream = file.OpenReadStream(maxFileSize);
         using var memoryStream = new MemoryStream();
         await fileStream.CopyToAsync(memoryStream);
         await File.WriteAllBytesAsync(filePath, memoryStream.ToArray());
 
         Message = $"{file.Name}がアップロードされました。";
     }
-
 }
