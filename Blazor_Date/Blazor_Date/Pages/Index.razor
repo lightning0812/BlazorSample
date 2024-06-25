@@ -1,0 +1,43 @@
+﻿@page "/"
+
+<input type="date" min="@_start" max="@_end" @bind="DateTime">
+
+@if (_message != null)
+{
+    <p>@_message</p>
+}
+
+@code{
+    /// <summary>
+    /// 入力可能日付（～から）
+    /// </summary>
+    private readonly string _start = DateTime.Now.AddMonths(-1).ToString("yyyy-MM-dd");
+
+    /// <summary>
+    /// 入力可能日付（～まで）
+    /// </summary>
+    private readonly string _end = DateTime.Now.ToString("yyyy-MM-dd");
+
+    /// <summary>
+    /// 選択されている日付
+    /// </summary>
+    private DateTime _dateTime = DateTime.Now;
+
+    /// <summary>
+    /// メッセージ
+    /// </summary>
+    private string _message;
+
+    private DateTime DateTime
+    {
+        get => _dateTime;
+        set
+        {
+            if (_dateTime != value)
+            {
+                _dateTime = value;
+                _message = $"日付が {_dateTime:yyyy-MM-dd} に変更されました。";
+            }
+        }
+    }
+}
