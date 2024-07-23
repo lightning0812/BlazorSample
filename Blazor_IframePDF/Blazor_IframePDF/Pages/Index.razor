@@ -5,21 +5,21 @@
 <PageTitle>Index</PageTitle>
 
 <h1>PDFをiframeを表示する</h1>
-<iframe src="@($"data:application/pdf;base64,{pdfBase64}")" width="100%" height="600px"></iframe>
+@if (pdfUrl != null)
+{
+    <iframe src="@pdfUrl" width="100%" height="600px"></iframe>
+}
 
 @code{
-    /// <summary>
-    /// テスト用のPDFデータをbase64へ変換したもの
-    /// </summary>
-    public string? pdfBase64;
+    public string? pdfUrl;
 
     /// <summary>
     /// 初期化（非同期）
     /// </summary>
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
+        // WebRootPathを使ってPDFファイルのURLを取得
         var filePath = Path.Combine(WebHostEnvironment.WebRootPath, "download", "Test.Pdf");
-        var fileBytes = await File.ReadAllBytesAsync(filePath);
-        pdfBase64 = Convert.ToBase64String(fileBytes);
+        pdfUrl = $"/download/Test.Pdf";
     }
 }
