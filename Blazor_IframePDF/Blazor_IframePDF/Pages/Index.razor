@@ -11,15 +11,27 @@
 }
 
 @code{
-    public string? pdfUrl;
-
-    /// <summary>
-    /// 初期化（非同期）
-    /// </summary>
-    protected override void OnInitialized()
-    {
-        // WebRootPathを使ってPDFファイルのURLを取得
-        var filePath = Path.Combine(WebHostEnvironment.WebRootPath, "download", "Test.Pdf");
-        pdfUrl = $"/download/Test.Pdf";
-    }
+    public string? pdfUrl = $"/download/Test.pdf";
 }
+
+@* base64バージョン *@
+@* @page "/"
+@inject IJSRuntime JSRuntime
+@inject IWebHostEnvironment WebHostEnvironment
+
+<PageTitle>Index</PageTitle>
+
+<h1>PDFをiframeを表示する</h1>
+
+<iframe src="@($"data:application/pdf;base64,{pdfBase64}")" width="100%" height="600px"></iframe>
+
+@code {
+    public string? pdfBase64;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var filePath = Path.Combine(WebHostEnvironment.WebRootPath, "download", "Test.Pdf");
+        var fileBytes = await File.ReadAllBytesAsync(filePath);
+        pdfBase64 = Convert.ToBase64String(fileBytes);
+    }
+} *@
