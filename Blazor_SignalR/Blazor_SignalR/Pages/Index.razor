@@ -1,0 +1,15 @@
+﻿@page "/"
+@inject IJSRuntime JSRuntime
+
+<button class="btn btn-primary" @onclick="DisconnectSignalRAsync">SignalR切断</button>
+
+@code{
+    /// <summary>
+    /// SignalRを切断
+    /// </summary>
+    /// <returns></returns>
+    private async Task DisconnectSignalRAsync()
+    {
+        await JSRuntime.InvokeVoidAsync("disconnect");
+    }
+}
