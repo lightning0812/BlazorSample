@@ -1,14 +1,23 @@
 ﻿@page "/"
 @inject IJSRuntime JSRuntime
 
-<button class="btn btn-primary" @onclick="DisconnectSignalRAsync">SignalR切断</button>
+<button class="btn btn-primary d-block mb-3" @onclick="ForceCloseConnectionAsync">SignalR切断（再接続の設定がされている場合は、切断後に再接続を試みる）</button>
+
+<button class="btn btn-primary d-block mb-3" @onclick="DisconnectAsync">SignalR切断（再接続の設定がされていても、再接続されない）</button>
 
 @code{
     /// <summary>
-    /// SignalRを切断
+    ///  SignalRの接続を切断（ただし、再接続の設定がされている場合は、切断後に再接続を試みる）
     /// </summary>
-    /// <returns></returns>
-    private async Task DisconnectSignalRAsync()
+    private async Task ForceCloseConnectionAsync()
+    {
+        await JSRuntime.InvokeVoidAsync("forceCloseConnection");
+    }
+
+    /// <summary>
+    /// SignalRの接続を切断（再接続の設定がされていても、再接続されない）
+    /// </summary>
+    private async Task DisconnectAsync()
     {
         await JSRuntime.InvokeVoidAsync("disconnect");
     }
