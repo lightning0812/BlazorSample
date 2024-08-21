@@ -6,7 +6,7 @@
 Blazor.start({
     reconnectionOptions: {
         maxRetries: 3,                      // SignalRが切れた場合、再接続の最大試行回数
-        retryIntervalMilliseconds: 2000,    // どのくらい感覚を空けて再接続を試みるか（単位:ミリ秒）
+        retryIntervalMilliseconds: 2000,    // どのくらい間隔を空けて再接続を試みるか（単位:ミリ秒）
     }
 });
 
