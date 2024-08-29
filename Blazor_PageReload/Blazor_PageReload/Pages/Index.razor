@@ -3,8 +3,8 @@
 @inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
 
-<button class="btn btn-primary" @onclick="ReloadPageByJavascript">Reload（Javascript）</button>
-<button class="btn btn-primary" @onclick="ReloadPageByNavigationManager">Reload（NavigationManager）</button>
+<button class="btn btn-primary d-block mb-3" @onclick="ReloadPageByJavascript">Reload（Javascript）</button>
+<button class="btn btn-primary d-block" @onclick="ReloadPageByNavigationManager">Reload（NavigationManager）</button>
 
 @code {
     /// <summary>
