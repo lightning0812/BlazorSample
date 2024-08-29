@@ -1,0 +1,26 @@
+﻿@page "/"
+
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<button class="btn btn-primary" @onclick="ReloadPageByJavascript">Reload（Javascript）</button>
+<button class="btn btn-primary" @onclick="ReloadPageByJavascript">Reload（NavigationManager）</button>
+
+@code {
+    /// <summary>
+    /// Javasciptによるリロード
+    /// </summary>
+    /// <returns></returns>
+    private async Task ReloadPageByJavascript()
+    {
+        await JSRuntime.InvokeVoidAsync("location.reload");
+    }
+
+    /// <summary>
+    /// NavigationManagerによるリロード
+    /// </summary>
+    private void ReloadPageByNavigationManager()
+    {
+        NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+}
